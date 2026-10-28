@@ -1,0 +1,5 @@
+# 手动安装时，把下面三行追加到你的 profile 目录（~/.dsh/profiles/<profile>/cordis.patch.yml）末尾，
+# 然后完全重启 DeepSeek Harness。
+- insert:
+    - id: portrait-bottom
+      name: '@local/dsh-portrait-bottom'

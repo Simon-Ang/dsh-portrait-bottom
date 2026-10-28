@@ -1,0 +1,48 @@
+{
+	"name": "@local/dsh-portrait-bottom",
+	"version": "0.1.0",
+	"description": "DeepSeek Harness plugin: manually toggle the right sidebar into a full-width bottom panel (default 40% height, drag-resizable) — ideal for portrait monitors such as 1600x2560.",
+	"type": "module",
+	"license": "MIT",
+	"author": "_REPLACE_WITH_YOUR_NAME_",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/_REPLACE_ME_/dsh-portrait-bottom.git"
+	},
+	"bugs": {
+		"url": "https://github.com/_REPLACE_ME_/dsh-portrait-bottom/issues"
+	},
+	"homepage": "https://github.com/_REPLACE_ME_/dsh-portrait-bottom#readme",
+	"keywords": [
+		"deepseek-harness",
+		"dsh",
+		"dsh-plugin",
+		"portrait",
+		"layout",
+		"sidebar",
+		"bottom-panel",
+		"electron"
+	],
+	"main": "lib/index.js",
+	"exports": {
+		".": "./lib/index.js",
+		"./client": "./lib/client.js",
+		"./package.json": "./package.json"
+	},
+	"dsh": {
+		"client": {
+			"inject": [
+				"slots"
+			],
+			"platform": "web"
+		}
+	},
+	"files": [
+		"lib",
+		"example",
+		"scripts",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	]
+}
